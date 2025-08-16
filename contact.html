@@ -168,7 +168,7 @@
 
     <div class="ps-grid">
       <!-- Info card -->
-      <aside class="ps-card">
+      <aside class="ps-card d-none d-md-block">
         <h3>Contact Info</h3>
         <ul class="ps-info">
           <li><span class="ps-dot"></span> <strong>24/7 Support:</strong> <a href="tel:+1 406-289-6776">+1 406-289-6776</a></li>
@@ -179,7 +179,7 @@
       </aside>
 
       <!-- Form -->
-      <form class="ps-form" id="psContactForm" action="#" method="post" novalidate>
+      <form class="ps-form col" id="psContactForm" action="#" method="post" novalidate>
         <div class="ps-field">
           <label for="name">Full Name *</label>
           <input id="name" name="name" type="text" placeholder="John Carter" required>
@@ -270,6 +270,54 @@
     grid-template-columns: 1fr 2fr;
   }
   @media (max-width: 900px){ .ps-grid{ grid-template-columns:1fr; } }
+/* ==== Mobile fixes (Bootstrap 5 friendly) ==== */
+@media (max-width: 768px) {
+  .ps-container { padding: 0 16px; }
+
+  .ps-header h2 { font-size: 1.6rem; }
+  .ps-header p  { font-size: .95rem; }
+
+  /* Make the FORM single-column on tablets & phones */
+  .ps-form{
+    grid-template-columns: 1fr !important;
+    gap: 14px;
+    padding: 16px;
+  }
+  /* Fields that spanned 2 columns shouldn’t force layout on mobile */
+  .ps-span-2{ grid-column: auto !important; }
+
+  /* Comfortable inputs on touch screens */
+  .ps-field input,
+  .ps-field select,
+  .ps-field textarea{
+    font-size: 16px;        /* prevents iOS zoom */
+    min-height: 48px;       /* larger tap area */
+    padding: 12px 14px;
+  }
+  .ps-field textarea{
+    min-height: 140px;
+  }
+
+  /* Button full width and easier to tap */
+  .ps-btn{
+    width: 100%;
+    padding: 14px 16px;
+  }
+
+  /* Tighter card spacing if you unhide it on md- */
+  .ps-card{ padding: 18px; }
+}
+
+/* Extra-small phones */
+@media (max-width: 400px){
+  .ps-header h2 { font-size: 1.45rem; }
+  .ps-subtitle   { font-size: .8rem; }
+}
+
+/* Optional: reduce heavy glows on small screens */
+@media (max-width: 768px){
+  .ps-contact-section::before{ opacity: .15; filter: blur(28px); }
+}
 
   .ps-card{
     background: linear-gradient(180deg, var(--ps-panel), var(--ps-panel-2));
