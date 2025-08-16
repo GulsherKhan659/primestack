@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Prime Stack Solutions</title>
+	
+<meta name="title" content="PrimeStack Solutions — Web, App & Digital Marketing Experts">
+<meta name="description" content="PrimeStackSolutions.org offers expert web and mobile app development, eCommerce store creation, social media management, branding, and custom digital solutions to grow your business.">
+
+<!-- SEO Keywords -->
+<meta name="keywords" content="PrimeStack Solutions, primestacksolutions.org, web development, mobile app development, Shopify experts, eCommerce development, UI UX design, SEO services, digital marketing, social media management, branding agency, full-service agency, business website solutions, app development agency">
+
+<!-- Author -->
+<meta name="author" content="PrimeStack Solutions">
+
+<!-- Viewport & Charset -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://www.primestacksolutions.org/assets/img/og-banner.jpg">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.primestacksolutions.org/">
+<meta property="og:title" content="PrimeStack Solutions — Web, App & Digital Marketing Experts">
+<meta property="og:description" content="Professional web & app development, Shopify store setup, branding, and digital marketing services to scale your business online.">
+<meta property="og:image" content="https://www.primestacksolutions.org/assets/img/og-banner.jpg">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://www.primestacksolutions.org/">
+<meta name="twitter:title" content="PrimeStack Solutions — Web, App & Digital Marketing Experts">
+<meta name="twitter:description" content="Grow your business with our digital services: web development, apps, Shopify, branding, and more.">
+<meta name="twitter:image" content="https://www.primestacksolutions.org/assets/img/og-banner.jpg">
+<meta name="author" content="Gulsher Khan">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/fav-icon/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/fav-icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/img/fav-icon/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/img/fav-icon/android-chrome-512x512.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/fav-icon/apple-touch-icon.png">
+<link rel="manifest" href="assets/img/fav-icon/site.webmanifest">
+<link rel="shortcut icon" href="assets/img/fav-icon/favicon.png" type="image/x-icon">
+
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/fontawesome.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/global.css">
+	<link rel="stylesheet" href="assets/css/swiper.min.css">
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="home-1">
+	<div id="preloader"></div>
+	<div class="up">
+		<a href="#" class="scrollup text-center"><i class="fas fa-chevron-up"></i></a>
+	</div>
+	<div class="cursor"></div>
+
+<!-- Start of coming soon  section
+	============================================= -->
+	<section id="bi-coming-soon" class="bi-coming-soon-section" data-background="assets/img/bg/coming-bg.png">
+  <div class="container text-center">
+    <div class="brand-logo mb-4">
+      <a href="#"><img src="assets/img/logo/primestacksolutions.org-logo-footer.png" alt="PrimeStackSolutions.org"></a>
+    </div>
+    
+    <div class="bi-coming-soon-img mb-5">
+      <img src="assets/img/about/coming.png" alt="Coming Soon Image" style="max-width: 100%; height: auto;">
+    </div>
+
+    <!-- Countdown Timer -->
+    <div id="countdown" class="countdown-timer"></div>
+  </div>
+</section>
+
+<style>
+  .countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #98e54f;
+    font-size: 2rem;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: 0 0 20px rgba(152, 229, 79, 0.2);
+    text-shadow: 1px 1px #000;
+  }
+
+  .countdown-timer span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
+  }
+
+  .countdown-timer span small {
+    font-size: 0.8rem;
+    color: #ccc;
+    font-weight: normal;
+    margin-top: 5px;
+  }
+</style>
+
+<script>
+// Set target date: Aug 6, 2025, 3:47 AM (60 hours from Aug 4, 2025, 3:47 AM)
+const targetDate = new Date("2025-08-06T03:47:00").getTime();
+
+const countdown = () => {
+  const now = new Date().getTime();
+  const distance = targetDate - now;
+
+  if (distance < 0) {
+    document.getElementById("countdown").innerHTML = "<span>⏰ Time's Up!</span>";
+    return;
+  }
+
+  const hours = Math.floor((distance / (1000 * 60 * 60)) % 60);
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const secs = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("countdown").innerHTML = `
+    <span>${days}<small>Days</small></span>
+    <span>${hours}<small>Hours</small></span>
+    <span>${mins}<small>Minutes</small></span>
+    <span>${secs}<small>Seconds</small></span>
+  `;
+};
+
+setInterval(countdown, 1000);
+</script>
+	
+<!-- End of coming soon  section
+	============================================= -->	
+
+
+
+	<!-- For Js Library -->
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/knob.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/parallax.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/jquery.filterizr.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/hover-revel.js"></script>
+    <script src="assets/js/split-type.min.js"></script>
+    <script src="assets/js/parallax-scroll.js"></script>
+    <script src="assets/js/jquery.marquee.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <script src="assets/js/tilt.jquery.min.js"></script>
+    <script src="assets/js/matter.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>		

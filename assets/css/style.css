@@ -770,8 +770,8 @@ select:visited {
   margin-left: 10px;
 }
 .bi-btn-3 a:hover {
-  color: var(--base-color);
-  background-color: transparent;
+  color: #fff;
+  background-color:#000;
   border: 1.5px solid var(--base-color);
 }
 
@@ -5787,8 +5787,8 @@ select:visited {
   position: absolute;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 56, 56, 0.8)));
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 56, 56, 0.8) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(107, 255, 21, 0.8)));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(44, 255, 2, 0.938) 100%);
 }
 .bi-portfolio-img-text-3 .portfolio-img img {
   -webkit-filter: grayscale(1);
@@ -19220,7 +19220,7 @@ CSS INDEX
   position: absolute;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
-  border-bottom: 300px solid rgba(255, 56, 56, 0.3);
+  border-bottom: 300px solid rgba(117,253,113, 0.3);
   border-right: 390px solid transparent;
 }
 .bi-service-feed-item .hover_img {
@@ -19556,7 +19556,7 @@ CSS INDEX
 }
 .bi-sidebar-widget .add-widget .add-widget-area .add-text h3 {
   color: #fff;
-  font-size: 38px;
+  font-size: 24px;
   font-weight: 800;
   padding-bottom: 15px;
 }
