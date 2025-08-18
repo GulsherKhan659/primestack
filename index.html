@@ -1515,10 +1515,14 @@
 }
 
 /* Section */
+
 .ps-testimonials-section{
   background: var(--ps-bg);
   padding: 70px 0;
   position: relative;
+    overflow: hidden;                 /* clip glow + arrows */
+
+  
 }
 .ps-testimonials-section::before{
   content:""; position:absolute; inset:-30% -10% auto auto;
